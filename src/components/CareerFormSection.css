@@ -1,0 +1,155 @@
+.career-form-section {
+  background: 1C1C1C;
+  color: #fff;
+  padding: 40px 20px 40px 20px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Playfair Display;
+  gap: 14px;
+}
+
+.title-wrapper h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-size: 38px;
+  letter-spacing: 1px;
+}
+
+.title-wrapper .bold {
+  font-weight: 700;
+}
+
+.line {
+  flex: 1 1;
+  height: 1px;
+  background-color: #636363;
+  border: none;
+  opacity: 0.4;
+  margin-top: 25px;
+  max-width: 120px;
+}
+
+.subtitle {
+  color: #aaa;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 1rem;
+  
+}
+
+.career-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.input-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 720px;
+  justify-content: center;
+}
+
+input,
+select {
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  font-size: 14px;
+  border-radius: 6px;
+  width: 300px;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  background: #222;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0 12px;
+  width: 300px;
+}
+
+.phone-input span {
+  padding-right: 8px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.phone-input input {
+  background: transparent;
+  border: none;
+  color: #fff;
+  padding: 14px 0;
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.submit-btn {
+  background: #f25c48;
+  color: white;
+  border: none;
+  padding: 14px 60px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.disclaimer {
+  color: #aaa;
+  margin-top: 16px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .input-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input,
+  select,
+  .phone-input {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .submit-btn {
+    width: 90%;
+    max-width: 320px;
+  }
+}
+
+.righ {
+  flex: 1 1;
+  height: 1.5px;
+  background: linear-gradient(to right,  #fffdfd 20%,#ede7e7 20%, #313030 70%);
+  border: none;
+  opacity: 0.4;
+  max-width: 260px;
+  margin-top: 30px;
+}
+ 
+.lef {
+  flex: 1 1;
+  height: 1.5px;
+  background: linear-gradient(to left,  #fffdfd 20%,#ede7e7 20%, #313030 70%);
+  border: none;
+  opacity: 0.4;
+  max-width: 260px;
+  margin-top: 25px;
+}
+select:invalid {
+  color: rgb(129, 129, 129);
+}

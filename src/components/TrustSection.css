@@ -1,0 +1,168 @@
+.trust-wrapper {
+  background: 1C1C1C;
+  color: white;
+  padding: 128px 20px 128px 20px;
+  text-align: center;
+}
+
+.accredited-text {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-family: Playfair Display;
+  font-style: bold italic;
+  margin-top: -10px;
+}
+
+.logo-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 128px;
+}
+
+.partner-logo {
+  max-width: 160px;
+  height: auto;
+}
+
+.size{
+    color: #020202;
+}
+
+.trust-box {
+  background: #2B2A2A;
+  border-radius: 8px;
+  padding: 15px 20px 35px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+.trust-box h2 {
+  font-size: 38px;
+  font-style: bold;
+  margin-bottom: 5px;
+  font-family: Playfair Display;
+}
+
+.trust-box .highlight {
+  color: #ff4e4e;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.tp{
+  font-size: 20px;
+  font-style: poppins;
+  color: #9A9A9A;
+  padding-bottom: 30px;
+}
+.trust-box p {
+  font-size: 15px;
+  margin-bottom: 15px;
+  font-style: poppins;
+  opacity: 0.85;
+}
+
+.trust-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 23px;
+  line-height: 25px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.trust-stats > div {
+  flex: 1;
+  padding: 0 20px;
+  position: relative;
+}
+
+
+.trust-stats > div:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 5%;
+  bottom: 5%;
+  width: 1px;
+  background: #DDE3E3; 
+  opacity: 0.5;
+}
+
+.people-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.person-card {
+  background: #141414;
+  border-radius: 12px;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+}
+
+.person-card img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.people-scroll-wrapper {
+  overflow-x: auto;
+  padding-bottom: 10px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; 
+}
+
+.scroll-track {
+  display: flex;
+  width: fit-content;
+  animation: scroll-left 160s linear infinite;
+}
+
+.people-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  width: max-content;
+}
+
+.person-card {
+  flex: 0 0 auto;
+  width: 123px;
+  scroll-snap-align: start;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 0px 0 0 0px;
+  text-align: center;
+}
+
+.people-scroll-wrapper::-webkit-scrollbar {
+  height: 6px;
+  display: none;
+}
+
+.people-scroll-wrapper::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-83.33%);
+  }
+}
+
+.company-logo {
+  width: 80px;
+  margin-top: -10px;
+  object-fit: contain;
+  vertical-align: top;
+  height: 22px;
+}

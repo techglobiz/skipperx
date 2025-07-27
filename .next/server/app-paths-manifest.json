@@ -1,0 +1,9 @@
+{
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
+  "/ar-vr/page": "app/ar-vr/page.js",
+  "/[slug]/page": "app/[slug]/page.js",
+  "/startup-stack/page": "app/startup-stack/page.js",
+  "/privacy-policy/page": "app/privacy-policy/page.js",
+  "/drone-engineering/page": "app/drone-engineering/page.js"
+}

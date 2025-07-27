@@ -1,0 +1,115 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Category {
+  id      Int      @id @default(autoincrement())
+  name    String
+  image   String?  
+  Product Product[]
+}
+
+model Product {
+  id         Int      @id @default(autoincrement())
+  name       String
+  price      Float
+  image      String
+  categoryId Int
+  category   Category @relation(fields: [categoryId], references: [id])
+}
+
+model User {
+  id       Int    @id @default(autoincrement())
+  email    String @unique
+  password String
+  role     String @default("admin") // you can use admin, user, etc.
+}
+
+model Page {
+  id          Int      @id @default(autoincrement())
+  title       String
+  slug        String   @unique
+  content     String   @db.Text
+  metaTitle   String?
+  metaDescription String?
+  isPublished Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model CourseCategory {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String?
+  image       String?
+  slug        String   @unique
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  courses     Course[]
+}
+
+model Course {
+  id              Int           @id @default(autoincrement())
+  title           String
+  slug            String        @unique
+  description     String        @db.Text
+  shortDescription String?
+  image           String?
+  price           Float
+  originalPrice   Float?
+  duration        String?       // e.g., "4 weeks", "6 months"
+  level           String?       // e.g., "Beginner", "Intermediate", "Advanced"
+  instructor      String?
+  features        String?       @db.Text // JSON string of course features
+  curriculum      String?       @db.Text // JSON string of course curriculum
+  requirements    String?       @db.Text // JSON string of course requirements
+  categoryId      Int
+  category        CourseCategory @relation(fields: [categoryId], references: [id])
+  isPublished     Boolean       @default(false)
+  isFeatured      Boolean       @default(false)
+  enrollmentCount Int           @default(0)
+  rating          Float?        @default(0)
+  totalReviews    Int           @default(0)
+  metaTitle       String?
+  metaDescription String?
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+}
+
+model SiteSettings {
+  id              Int      @id @default(autoincrement())
+  siteTitle       String
+  siteDescription String   @db.Text
+  metaTitle       String?
+  metaDescription String?  @db.Text
+  keywords        String?  @db.Text
+  ogTitle         String?
+  ogDescription   String?  @db.Text
+  ogImage         String?
+  twitterTitle    String?
+  twitterDescription String? @db.Text
+  twitterImage    String?
+  favicon         String?
+  logo            String?
+  contactEmail    String?
+  contactPhone    String?
+  address         String?  @db.Text
+  socialLinks     String?  @db.Text // JSON string of social media links
+  googleAnalytics String?
+  facebookPixel   String?
+  isActive        Boolean  @default(true)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
