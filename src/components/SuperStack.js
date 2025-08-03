@@ -9,6 +9,7 @@ import img1 from "../assets/1sttt.png";
 import img2 from "../assets/2nd.png";
 import img3 from "../assets/3rdd.png";
 import arrowIcon from "../assets/arrows.png";
+import Link from "next/link";
 
 const stackData = [
   {
@@ -65,7 +66,11 @@ const SuperStack = () => {
                 <br className="next" />
                 {item.successRate}
               </p>
-              <button className="stack-learn">
+
+               <Link
+              href={`/${item.title.toLowerCase().replace(/\s+/g, "-")}`}
+              className="stack-learn"
+              >
                 <Image
                   src={arrowIcon}
                   alt="arrow"
@@ -73,7 +78,17 @@ const SuperStack = () => {
                   width={30}
                   height={30}
                 />
-              </button>
+
+            </Link>
+              {/* <button className="stack-learn">
+                <Image
+                  src={arrowIcon}
+                  alt="arrow"
+                  className="arrow-icon"
+                  width={30}
+                  height={30}
+                />
+              </button> */}
             </div>
             <div className="stack-footer-scroll">
               <div className="scroll-content">{item.footer} · {item.footer}</div>

@@ -14,6 +14,7 @@ import SkippersAdvantage from "@/components/SkippersAdvantage";
 import LaunchSection from "@/components/LaunchSection";
 import BackedByBest from "@/components/BackedByBest";
 import WhyTrustUs from "@/components/WhyTrustUs";
+import Circle from "@/components/Circle";
 
 export default function Home() {
   const [products, setProducts] = useState([
@@ -33,6 +34,7 @@ export default function Home() {
       <SuperStack />
       <CareerFormSection />
       <SkippersAdvantage />
+   <Circle />
       <LaunchSection />
       <BackedByBest />
       <WhyTrustUs />

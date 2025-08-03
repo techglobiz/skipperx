@@ -1,10 +1,6 @@
 /*!********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/app/ar-vr/page.css ***!
   \********************************************************************************************************************************************************************************************************************************************************************/
-
-/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/arvr/ARVREngineering.css ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************/
 .arvrbody {
   background-color: #0e0e0e;
   padding-top: 50px;
@@ -409,55 +405,6 @@
 }
 
 
-.arvr-pricing-card {
-  background-color: #fff;
-  border-radius: 14px;
-  margin-left: 15px;
-  padding: 5px 20px 5px 20px;
-  width: 481px;
-  border: 12px solid #aeadad;
-  height: 590px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  font-family: 'Poppins', sans-serif;
-  color: #111;
-}
-
-.arvr-pricing-card h2 {
-  font-size: 32px;
-  font-weight: 500;
-  font-family: Playfair Display;
-  margin-bottom: 30px;
-  line-height: 1.4;
-}
-
-
-
-.arvr-pricingform-card {
-  background-color: #fff;
-  border-radius: 14px;
-  margin-left: 15px;
-  padding: 5px 20px 5px 20px;
-  width: 481px;
-  border: 12px solid #aeadad;
-  height: 620px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  font-family: 'Poppins', sans-serif;
-  color: #111;
-  margin-top: 25px;
-}
-
-.arvr-pricingform-card h2 {
-  font-size: 32px;
-  font-weight: 500;
-  font-family: Playfair Display;
-  margin-bottom: 30px;
-  line-height: 1.4;
-}
-
-
-
-
-
 
 
 .arvr-features-list {
@@ -576,7 +523,7 @@
 }
 
 .module-card {
-  background: #73a573;
+  background: #14101A;
   border-radius: 10px;
   margin-bottom: 12px;
   padding: 15px 20px;
@@ -636,129 +583,19 @@
   background-clip: text;
 }
 
-.arvr-join-form {
+.drone-stat-section {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  justify-content: space-between;
+  padding: 64px 120px;
+  background-color: rgba(116, 20, 99, 0.4);
+  flex-wrap: nowrap;
+  gap: 27px;
 }
 
-.arvr-form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
 
-.arvr-form-label {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
-  font-family: 'Poppins', sans-serif;
-}
-
-.arvr-join-input {
-  background: #9A9A9A;
-  border: 1px solid #9A9A9A;
-  border-radius: 12px;
-  padding: 15px 20px;
-  color: #fff;
-  font-size: 14px;
-  font-family: 'Poppins', sans-serif;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  width: 100%;
-}
-
-.arvr-join-input:focus {
-  outline: none;
-  border-color: #6366f1;
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
-}
-
-.arvr-join-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.arvr-select {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
-  background-position: right 12px center;
-  background-repeat: no-repeat;
-  background-size: 16px;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  cursor: pointer;
-}
-
-.arvr-select option {
-  background: #1a1a1a;
-  color: #fff;
-  padding: 10px;
-}
-
-.arvr-phone-group {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.arvr-country-code {
-  background: #9A9A9A;
-  border: 1px solid #9A9A9A;
-  border-radius: 12px;
-  padding: 15px 15px;
-  color: #fff;
-  font-size: 14px;
-  font-family: 'Poppins', sans-serif;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  min-width: 60px;
-  text-align: center;
-}
-
-.arvr-phone-input {
-  flex: 1;
-}
-
-.arvr-form-submit-btn {
-  background: #FB614B;
-  border: none;
-  border-radius: 15px;
-  padding: 18px 30px;
-  color: white;
-  font-size: 16px;
-  font-weight: 600;
-  font-family: 'Poppins', sans-serif;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-top: 10px;
-  position: relative;
-  overflow: hidden;
-}
-
-.arvr-form-submit-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
-}
-
-.arvr-form-submit-btn:active {
-  transform: translateY(0);
-}
-
-.arvr-form-submit-btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.5s;
-}
-
-.arvr-form-submit-btn:hover::before {
-  left: 100%;
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
 /* Responsive Design */

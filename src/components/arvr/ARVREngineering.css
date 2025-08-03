@@ -754,6 +754,75 @@
   left: 100%;
 }
 
+/* Form Validation Styles */
+.arvr-join-input.error {
+  border: 2px solid #ff4757;
+  background-color: rgba(255, 71, 87, 0.1);
+}
+
+.arvr-error-message {
+  color: #ff4757;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+  font-family: 'Poppins', sans-serif;
+}
+
+.arvr-submit-message {
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.arvr-submit-message.success {
+  background-color: rgba(46, 213, 115, 0.1);
+  border: 1px solid #2ed573;
+  color: #2ed573;
+}
+
+.arvr-submit-message.error {
+  background-color: rgba(255, 71, 87, 0.1);
+  border: 1px solid #ff4757;
+  color: #ff4757;
+}
+
+.arvr-form-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.arvr-form-submit-btn:disabled::before {
+  display: none;
+}
+
+/* Loading animation for submit button */
+.arvr-form-submit-btn:disabled {
+  position: relative;
+}
+
+.arvr-form-submit-btn:disabled::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top: 2px solid #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 10px;
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .arvr-join-community {

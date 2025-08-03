@@ -15,7 +15,7 @@ const CareerFormSection = () => {
 
       <form className="career-form">
         <div className="input-row">
-          <input type="text" placeholder="First Name*" />
+          <input type="text" placeholder="First Name*" className="input-row" />
           <select required defaultValue="">
             <option value="" disabled hidden>Interest*</option>
             <option value="drone">Drone Engineering</option>

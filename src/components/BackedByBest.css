@@ -1,7 +1,7 @@
 .best-container {
   background-color: #0c0c0c;
   color: #fff;
-  padding: 0px 70px 60px 70px;
+  padding: 64px 70px 128px 70px;
   margin-left: 0px;
   margin-right: 0px;
   font-family: 'Poppins', sans-serif;
@@ -14,7 +14,7 @@
   font-size: 38px;
   font-family: Playfair Display;
   justify-content: center;
-  gap: 30px;
+  gap: 15px;
 }
 
 .left {
@@ -45,7 +45,7 @@
 
 .best-subheading {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 16px;
   font-style: poppins;
   color: #ccc;
   font-size: 20px;

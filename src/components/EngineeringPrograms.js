@@ -63,7 +63,7 @@ const EngineeringPrograms = () => {
               <p className="eng-quote">{item.quote}</p>
             </div>
 
-            <div className="eng-success">
+            <div className="eng-success mt-3">
               <p className="eng-success-label">Success rate:</p>
               <p className="eng-success-value">{item.success}</p>
             </div>

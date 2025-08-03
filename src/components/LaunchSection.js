@@ -12,16 +12,14 @@ const LaunchSection = () => {
           <div className="launch-left-bg"></div> {/* Background image div */}
 
           <h2>
-            <FaRocket className="rocket-icon" /> Launching <span className="highlight">soon</span>
+            Launching <span className="highlight">soon</span>
           </h2>
           <h3>
             Big Launch Ahead: <span className="highlight">10+ Skill-Boosting</span><br />
             <em>Programs</em>
           </h3>
           <p>Next-gen learning designed to launch your career.</p>
-          <button className="launch-btn">
-            <FaUsers className="btn-icon" /> Join Waiting list <FaArrowRight className="arrow-icon" />
-          </button>
+          <button className="launch-btn">Explore Programs</button>
         </div>
 
         {/* Right Animated Background + Card */}
@@ -42,6 +40,16 @@ const LaunchSection = () => {
                     "DevOps",
                     "Product Design",
                     "AR/VR",
+                    "Data Science",
+                    "Data Analyst",
+                    "UI/UX",
+                    "Web Dev",
+                    "Cybersecurity",
+                    "AI/ML",
+                    "Cloud",
+                    "DevOps",
+                    "Product Design",
+                    "AR/VR",
                     "Data Science"
                   ].map((text, idx) => (
                   <div className="block" key={idx}>{text}</div>
@@ -50,12 +58,12 @@ const LaunchSection = () => {
             ))}
           </div>
 
-          {/* Gradient Overlay */}
+          
           <div className="launch-gradient-overlay"></div>
 
-          {/* Right Card */}
+          
           <div className="right-card">
-            <div className="tag"><FaStar className="star-icon" /> Your Mini Gold Mine</div>
+            <div className="tag">⭐ Your Mini Gold Mine</div>
             <p className="starting-text">Starting at just</p>
             <h2 className="price">₹199/-</h2>
             <div className="coming-soon">COMING SOON</div>
